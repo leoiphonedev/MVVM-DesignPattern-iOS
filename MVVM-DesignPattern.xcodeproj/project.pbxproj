@@ -13,6 +13,8 @@
 		DC64412023AE13C1004A063A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC64411E23AE13C1004A063A /* Main.storyboard */; };
 		DC64412223AE13C2004A063A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC64412123AE13C2004A063A /* Assets.xcassets */; };
 		DC64412523AE13C2004A063A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC64412323AE13C2004A063A /* LaunchScreen.storyboard */; };
+		DC9EF6BA23AF4B340095CF35 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EF6B923AF4B340095CF35 /* User.swift */; };
+		DC9EF6BC23AF4B820095CF35 /* AuthenticationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EF6BB23AF4B820095CF35 /* AuthenticationVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DC64412123AE13C2004A063A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC64412423AE13C2004A063A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC64412623AE13C2004A063A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9EF6B923AF4B340095CF35 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DC9EF6BB23AF4B820095CF35 /* AuthenticationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				DC64411823AE13C0004A063A /* AppDelegate.swift */,
 				DC64411A23AE13C0004A063A /* SceneDelegate.swift */,
 				DC64411C23AE13C1004A063A /* ViewController.swift */,
+				DC9EF6B923AF4B340095CF35 /* User.swift */,
 				DC64411E23AE13C1004A063A /* Main.storyboard */,
 				DC64412123AE13C2004A063A /* Assets.xcassets */,
 				DC64412323AE13C2004A063A /* LaunchScreen.storyboard */,
 				DC64412623AE13C2004A063A /* Info.plist */,
+				DC9EF6BB23AF4B820095CF35 /* AuthenticationVM.swift */,
 			);
 			path = "MVVM-DesignPattern";
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC9EF6BA23AF4B340095CF35 /* User.swift in Sources */,
 				DC64411D23AE13C1004A063A /* ViewController.swift in Sources */,
 				DC64411923AE13C0004A063A /* AppDelegate.swift in Sources */,
 				DC64411B23AE13C0004A063A /* SceneDelegate.swift in Sources */,
+				DC9EF6BC23AF4B820095CF35 /* AuthenticationVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
