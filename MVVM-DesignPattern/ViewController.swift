@@ -28,20 +28,18 @@ class ViewController: UIViewController {
         guard let userName = self.txtUserName.text else {return}
         guard let password = self.txtPassword.text else {return}
         
-        authenticationVM.authenticateUserWith(userName, andPassword: password)
         authenticationVM.loginCompletionHandler { [weak self] (status, message) in
             guard let self = self else {return}
             if status {
-                self.lblMessage.text = "Logged in with username == \(self.authenticationVM.username) and email == \(self.authenticationVM.email)"
+                self.lblMessage.text = "Logged in with username = \(self.authenticationVM.username) and email = \(self.authenticationVM.email)"
                 self.lblMessage.isHidden = false
             } else {
                 self.lblMessage.text = message
                 self.lblMessage.isHidden = false
             }
         }
-        
+        authenticationVM.authenticateUserWith(userName, andPassword: password)
     }
-
 }
 
 

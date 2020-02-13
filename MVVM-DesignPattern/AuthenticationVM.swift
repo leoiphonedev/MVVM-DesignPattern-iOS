@@ -11,14 +11,17 @@ import Foundation
 class AuthenticationVM: NSObject {
     var user: User!
     
-    var username: String {return user.userName}
-    var email: String {return user.email}
+    var username: String {
+        return user.userName
+    }
+    var email: String {
+        return user.email
+    }
     
     typealias authenticationLoginCallBack = (_ status:Bool, _ message:String) -> Void
     var loginCallback:authenticationLoginCallBack?
     
     func authenticateUserWith(_ username:String, andPassword password:String) {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) {
             if username.count  != 0 {
                 if password.count != 0 {
                     self.verifyUserWith(username, andPassword: password)
@@ -30,8 +33,6 @@ class AuthenticationVM: NSObject {
                 // username empty
                 self.loginCallback?(false, "Username should not be empty")
             }
-        }
-        
     }
     
     
@@ -50,6 +51,4 @@ class AuthenticationVM: NSObject {
     func loginCompletionHandler(callBack: @escaping authenticationLoginCallBack) {
         self.loginCallback = callBack
     }
-    
-    
 }

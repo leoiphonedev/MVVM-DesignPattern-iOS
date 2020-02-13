@@ -63,12 +63,12 @@
 				DC64411823AE13C0004A063A /* AppDelegate.swift */,
 				DC64411A23AE13C0004A063A /* SceneDelegate.swift */,
 				DC64411C23AE13C1004A063A /* ViewController.swift */,
+				DC9EF6BB23AF4B820095CF35 /* AuthenticationVM.swift */,
 				DC9EF6B923AF4B340095CF35 /* User.swift */,
 				DC64411E23AE13C1004A063A /* Main.storyboard */,
 				DC64412123AE13C2004A063A /* Assets.xcassets */,
 				DC64412323AE13C2004A063A /* LaunchScreen.storyboard */,
 				DC64412623AE13C2004A063A /* Info.plist */,
-				DC9EF6BB23AF4B820095CF35 /* AuthenticationVM.swift */,
 			);
 			path = "MVVM-DesignPattern";
 			sourceTree = "<group>";
